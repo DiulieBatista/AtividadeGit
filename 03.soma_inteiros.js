@@ -1,17 +1,20 @@
 // Soma de Valores Inteiros 
 
+
 const ler = require('readline-sync');
 
-let A = ler.questionFloat("Digite um número :  ");
-let B = ler.questionFloat("Digite outro número:");
-let C;
 
-if (A == B ) {
-   C = A + B;
-   console.log( "a soma de A+ B e:  " + C);
+let num1 = ler.questionFloat("imforme o numero A :");
+let num2 = ler.questionFloat("imforme o numero B :");
+let num3 = ler.questionFloat("imforme o numero C :");
 
-} else { 
-    C = A * B;
-    console.log( " a multiplicação de a+b e :" + C);
+soma = num1 + num2;
 
+if (soma <= num3) {
+    console.log("A soma de A+B e menor que C :  ");
+    
+} else {
+    console.log (" A Soma de A+B é maior que C:  ");
 }
+
+
